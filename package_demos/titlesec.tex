@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage{titlesec}
+\newcommand*{\justifyheading}{\raggedleft}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\justifyheading}{\chaptertitlename\ \thechapter}
+  {20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\justifyheading}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\justifyheading}{\thesubsection}{1em}{}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\begin{document}
+\Blinddocument
+\end{document}

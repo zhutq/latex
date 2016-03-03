@@ -1,0 +1,45 @@
+﻿\documentclass[UTF8]{ctexart}
+
+\setmonofont{Courier New}
+
+\usepackage{color}
+\usepackage{listings}
+
+\lstset{
+	language=[Visual]C++,
+	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
+	identifierstyle=\ttfamily,
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
+	showstringspaces=false,
+	basicstyle=\ttfamily\small,
+	numberstyle=\footnotesize,
+	numbers=left,
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=4,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	breakatwhitespace=false,
+	aboveskip={1.5\baselineskip},
+	columns=fixed,
+	upquote=true,
+	extendedchars=true,
+	frame=tb,
+	% backgroundcolor=\color{lbcolor},
+	escapeinside=``, % 处理过长的中文注释
+}
+
+
+\begin{document}
+代码片段：Code
+\begin{lstlisting}
+// 中文注释，目前不被染色。
+// English Comments
+// 这一行中文注释很长的话，会自动换行，但是换行后，第二行前面的行号不会增加。但是不会像英文注释那样补充换行符。
+// This is a very ..................................... long English comment.
+for (int i = 0; i < 20; ++i)
+	;
+\end{lstlisting}
+
+\end{document}
